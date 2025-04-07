@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 dados = pd.read_csv("C:/Users/usuário/Desktop/neurônio básico/dados.csv")
 
 # Separa as features (entradas) e o rótulo (saída)
-X = dados.iloc[:, :-1].values
+X = dados.iloc[:, 1:-1].values
 y = dados.iloc[:, -1].values
 
 # Converter os rótulos para o formato bipolar, por exemplo:
